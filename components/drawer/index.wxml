@@ -1,0 +1,8 @@
+<view class="i-class i-drawer {{ visible ? 'i-drawer-show' : '' }} {{ 'i-drawer-' + mode }}">
+    <view wx:if="{{ mask }}" class="i-drawer-mask" bindtap="handleMaskClick">
+     <!-- i-hox 这里写导航部分 -->
+      <view class="i-drawer-box"></view>
+    </view>
+    <view class="i-drawer-container">
+    </view>
+</view>

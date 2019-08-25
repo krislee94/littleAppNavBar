@@ -3,4 +3,5 @@
     <view class='main'>
         <view class='p'>有返回和home的页面</view>
     </view>
+    <i-draw mode="left" visible="{{show}}"></i-draw> 
 </view>

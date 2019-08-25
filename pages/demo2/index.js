@@ -3,7 +3,9 @@
 //const app = getApp();
 
 Page({
-  data: {},
+  data: {
+    show:true,
+  },
   handlerGobackClick(delta) {
     const pages = getCurrentPages();
     if (pages.length >= 2) {
@@ -18,8 +20,6 @@ Page({
   },
   handlerGohomeClick() {
     console.log("1111");
-    wx.navigateTo({
-      url: '/pages/index/index'
-    });
+
   }
 });
