@@ -92,8 +92,8 @@ page {
 }
 
 .lxy-nav-bar__inner .lxy-nav-bar__center {
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 34rpx;
+  line-height: 34rpx;
   text-align: center;
   position: relative;
   flex: 1;
@@ -103,6 +103,19 @@ page {
   align-items: center;
   justify-content: center;
   padding-left: 10px;
+}
+.lxy-nav-bar-left{
+  font-size: 34rpx;
+  line-height: 34rpx;
+  /* text-align: center; */
+  position: relative;
+  /* flex: 1; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -10rpx; */
 }
 
 .lxy-nav-bar__inner .lxy-nav-bar__loading {

@@ -1,5 +1,5 @@
 <view class='main-wraper'>
-    <navBar title='详情页' background='#fff' back="{{true}}" bindback="handlerGobackClick"></navBar>
+    <navBar titleleft='详情页' background='#fff' back="{{true}}" bindback="handlerGobackClick"></navBar>
     <view class='main'>
         <view class='p'>详情页</view>
     </view>

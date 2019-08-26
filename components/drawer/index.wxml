@@ -1,7 +1,46 @@
 <view class="i-class i-drawer {{ visible ? 'i-drawer-show' : '' }} {{ 'i-drawer-' + mode }}">
     <view wx:if="{{ mask }}" class="i-drawer-mask" bindtap="handleMaskClick">
      <!-- i-hox 这里写导航部分 -->
-      <view class="i-drawer-box"></view>
+      <view class="i-drawer-box">
+      <!-- 头部 -->
+      <view class="i-drawer-box-header"></view>
+      <view class="i-draw-bottom">
+         <!-- 首页 -->
+         <view class="i-draw-common" bindtap='idraw_goto' data-set="home">
+              <image class="i_draw_home_icon" src='/images/i-draw-home.png'></image>
+              <text class="i-draw-common-text">首页</text>
+         </view>
+
+         <view class="i-draw-common" bindtap='idraw_goto' data-set="order">
+              <image class="i_draw_home_icon" src='/images/i-draw-order.png'></image>
+              <text class="i-draw-common-text">订单</text>
+         </view>
+
+         <view class="i-draw-common" bindtap='idraw_goto' data-set="like">
+              <image class="i_draw_home_icon" src='/images/i-draw-play.png'></image>
+              <text class="i-draw-common-text">收藏</text>
+         </view>
+
+         <view class="i-draw-common" bindtap='idraw_goto' data-set="card">
+              <image class="i_draw_home_icon" src='/images/i-draw-card.png'></image>
+              <text class="i-draw-common-text">卡包</text>
+         </view>
+
+         <view class="i-draw-common" bindtap='idraw_goto' data-set="foot">
+              <image class="i_draw_home_icon" src='/images/i-draw-foot.png'></image>
+              <text class="i-draw-common-text">足迹</text>
+         </view>
+
+        <!--足迹的内容 -->
+        <view class="i-draw-foot-box">
+         <view wx:for="{{idrawFoot}}" wx:key="{{item.promotionId}}" bindtap='gotoHuTui' data-info="{{item}}" class="i-draw-subtitle">
+              <text>{{item.title}}</text>
+         </view>
+         </view>
+      </view>
+      
+      
+      </view>
     </view>
     <view class="i-drawer-container">
     </view>

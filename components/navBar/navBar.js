@@ -97,8 +97,10 @@ Component({
         `padding-bottom:${navBarExtendHeight}px`
       ].join(';');
       let navBarLeft = [];
+      let navBarTitleLeft = [];
       if ((back && !home) || (!back && home)) {
         navBarLeft = [`width:${capsulePosition.width}px`, `height:${capsulePosition.height}px`].join(';');
+        navBarTitleLeft = [`margin-left:-${capsulePosition.width}rpx`].join(';');
       } else if ((back && home) || title) {
         navBarLeft = [
           `width:${capsulePosition.width}px`,
@@ -112,6 +114,7 @@ Component({
         this.data = {
           navigationbarinnerStyle,
           navBarLeft,
+          navBarTitleLeft,
           navBarHeight,
           capsulePosition,
           navBarExtendHeight,
@@ -121,6 +124,7 @@ Component({
         this.setData({
           navigationbarinnerStyle,
           navBarLeft,
+          navBarTitleLeft,
           navBarHeight,
           capsulePosition,
           navBarExtendHeight,

@@ -3,5 +3,52 @@
   width: 556rpx;
   height: 100%;
   background: #fff;
-
+}
+.i-drawer-box-header{
+  width: 556rpx;
+  height: 272rpx;
+  background: #000;
+}
+.i_draw_home_icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.i-draw-bottom{
+  display: flex;
+  flex-direction: column;
+  padding-top: 32rpx;
+}
+.i-draw-common{
+  width: 556rpx;
+  height: 86rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 74rpx;
+}
+.i-draw-common:active{
+  background: #f0f0f0;
+}
+.i-draw-common-text{
+  font-size: 32rpx;
+  color: #333;
+  line-height: 28rpx;
+  margin-left: 44rpx;
+  font-weight: 500;
+}
+.i-draw-subtitle{
+  display: flex;
+  height: 60rpx;
+}
+.i-draw-subtitle:active{
+  background: #f0f0f0;
+}
+.i-draw-subtitle text{
+  font-size: 26rpx;
+  color: #949494;
+  line-height: 26rpx;
+}
+.i-draw-foot-box{
+  margin-top: 20rpx;
+  padding-left: 150rpx;
 }

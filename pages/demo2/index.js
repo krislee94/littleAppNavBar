@@ -4,7 +4,7 @@
 
 Page({
   data: {
-    show:true,
+    show:false,
   },
   handlerGobackClick(delta) {
     const pages = getCurrentPages();
@@ -19,7 +19,6 @@ Page({
     }
   },
   handlerGohomeClick() {
-    console.log("1111");
-
+    this.selectComponent('#idraw').show();
   }
 });

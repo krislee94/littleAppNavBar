@@ -18,12 +18,12 @@
         <slot name="left"></slot>
       </block>
     </view>
-    <view class='lxy-nav-bar__center'>
+    <view class="{{title && !titleleft ? 'lxy-nav-bar__center' :'lxy-nav-bar-left'}}">
       <block wx:if="{{title && !titleleft}}">
         <text>{{title}}</text>
       </block>
       <block wx:if="{{!title && titleleft}}">
-        <text>{{title}}</text>
+        <text style="{{navBarTitleLeft}}">{{titleleft}}</text>
       </block>
       <view class='lxy-nav-bar-search' style="height:{{capsulePosition.height}}px;" wx:elif="{{searchBar}}" bindtap="search">
         <view class='lxy-nav-bar-search__icon' />
