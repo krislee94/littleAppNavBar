@@ -30,7 +30,9 @@ Navigation 是小程序的顶部导航组件，当页面配置 navigationStyle �
 | 属性       | 类型         | 默认值   | 必填 | 说明                                                                                      |
 | ---------- | ------------ | -------- | ---- | ----------------------------------------------------------------------------------------- |
 | ext-class  | string       |          | 否   | 添加在组件内部结构的 class，可用于修改组件内部的样式                                      |
-| title      | string       |          | 否   | 导航标题，如果不提供，则名为 center 的 slot 有效                                          |
+| title      | string       |          | 否   | 导航标题，如果不提供，则名为 center 的 slot 有效 
+
+| titleleft      | string       |          | 否   | 导航标题，不居中，靠左，如果不提供，则名为 center 的 slot 有效                                          |
 | background | string       | #ffffff  | 否   | 导航背景色                                                                                |
 | color      | string       | #000000  | 否   | 导航字体颜色                                                                              |
 | iconTheme  | string       | black    | 否   | 主题图标和字体颜色,当背景色为深色时,可以设置'white'                                       |
